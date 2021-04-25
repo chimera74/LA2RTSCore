@@ -1,0 +1,31 @@
+﻿<Window x:Class="LA2RTS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LA2RTS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="503" Width="1182">
+    <Grid Margin="0,0,0,10">
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Margin="7,13,0,0" VerticalAlignment="Top" Width="75" Click="startButton_Click"/>
+        <Button x:Name="stopButton" Content="Stop" HorizontalAlignment="Left" Margin="7,39,0,0" VerticalAlignment="Top" Width="75" Click="stopButton_Click"/>
+        <Label x:Name="statusLabel" Content="Server stopped" HorizontalAlignment="Left" Margin="87,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="logTextBlock" Margin="7,64,0,0" TextWrapping="Wrap" Text="TextBox" Width="347" HorizontalAlignment="Left"/>
+        <ListBox x:Name="clientsListBox" HorizontalAlignment="Left" Height="363" Margin="509,64,0,0" VerticalAlignment="Top" Width="655"/>
+        <Label x:Name="label" Content="Connected clients:&#xD;&#xA;" HorizontalAlignment="Left" Margin="509,33,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="clientCountLabel" Content="0" HorizontalAlignment="Left" Margin="616,33,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="loginButton" Content="Login" HorizontalAlignment="Left" Margin="509,432,0,0" VerticalAlignment="Top" Width="75" Click="loginButton_Click"/>
+        <Button x:Name="enterWorldButton" Content="Enter world" HorizontalAlignment="Left" Margin="589,432,0,0" VerticalAlignment="Top" Width="75" Click="enterWorldButton_Click"/>
+        <TextBox x:Name="toXTextBox" HorizontalAlignment="Left" Height="23" Margin="384,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="toYTextBox" HorizontalAlignment="Left" Height="23" Margin="384,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="toZTextBox" HorizontalAlignment="Left" Height="23" Margin="384,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1" Content="X:" HorizontalAlignment="Left" Margin="359,60,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy" Content="Z:" HorizontalAlignment="Left" Margin="359,116,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy1" Content="Y:" HorizontalAlignment="Left" Margin="359,88,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="loadPosButton" Content="Load" HorizontalAlignment="Left" Margin="359,147,0,0" VerticalAlignment="Top" Width="68" Click="loadPosButton_Click"/>
+        <Button x:Name="gotoButton" Content="Go to" HorizontalAlignment="Left" Margin="432,147,0,0" VerticalAlignment="Top" Width="72" Click="gotoButton_Click"/>
+        <Button x:Name="enableBotButton" Content="Enable bot" HorizontalAlignment="Left" Margin="359,172,0,0" VerticalAlignment="Top" Width="68" Click="EnableBotButton_Click"/>
+        <Button x:Name="disableBotButton" Content="Disable bot" HorizontalAlignment="Left" Margin="434,172,0,0" VerticalAlignment="Top" Width="70" Click="DisableBotButton_Click"/>
+
+    </Grid>
+</Window>
